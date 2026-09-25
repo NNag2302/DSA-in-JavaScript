@@ -1,7 +1,7 @@
 var ReverseLinkedList = function (head){
     let previous = null;
 
-    while(head){
+    while(head !== null){
         let newNode = head.next;
         head.next = previous;
         previous = head;
